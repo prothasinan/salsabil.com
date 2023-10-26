@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>sal sabil</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    
+    <!----tittle favicon icon -->
+
+    <link rel="shortcut icon" type="image/x-icon" href="image/sample tittle logo.jpg">
+    
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src='main.js'></script>
+</head>
+<body>
+    
+    
+
+    
+
+    <div class="container">
+        <div class="navbar">
+            <div class="logo" style="text-align: left;">
+          <img src="image/logo 2.png" width="125px">
+         
+       </div><nav>
+          <ul id="menuItem"> 
+            <li> <img src="image/hidemenu2.png" alt="close" class="close-icon" onclick="hidemenu()"></li>
+              <li><a href="main.html">Home</a><br><br></li>
+              <li><a href="product.html">products</a><br><br></li>
+              <li id="list"><a href="blog.html" >Blog</a><br><br></li>
+              <li><a href="about us.html">About us </a><br><br></li>
+              <li><a href="contact.html" class="active">Contact</a><br><br></li>
+              <li><img src="image/cartlogo2.png" id="cart-icon" onclick="showcart()"><br><br></li>
+        </ul>
+    <!--hamburger icon -->
+    <img src="image/hamburger2.png" class="menu-icon" alt="menu" onclick="showmenu()">   
+    </nav></div>
+     <!---cart-->
+<div class="cart" id="cart">
+    <div class="carttittle"><h3>Your cart</h3></div>
+    <div class="cartcontent">
+      
+        <h3 style="color: grey; text-align: center;">To view item in cart go to product</h3>
+    
+    <div></div>
+    <img src="image/closecart.png" alt="closecart" class="closecart" onclick="closecart()">
+
+</div>
+       </div>
+
+       <div class="cia" style="text-align: center;"><h1>Contact</h1></div><br><br><br>
+
+ <!---location google map--> 
+ 
+ 
+ <section class="location">
+    
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1825.2137256215603!2d90.38035015504097!3d23.803394444774852!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c72e9436ba45%3A0xcd4ac5ff59cb7867!2z4Kau4Ka_4Kaw4Kaq4KeB4KawLCDgpqLgpr7gppXgpr4!5e0!3m2!1sbn!2sbd!4v1697017428898!5m2!1sbn!2sbd" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+   
+</section>
+
+<!----contact us info---------->
+<section class="contact-us">
+     
+<div class="row">
+
+    <div class="contact-col">
+       <div>
+         <img src="image/home-solid-24 (1).png" alt="">
+         <span>
+            <h5>Mirpur, Dhaka Bangladesh , Dhaka, Bangladesh, 1218</h5>
+            <p>address</p>
+         </span>
+       </div>
+       <div>
+        <img src="image/phone-solid-24.png" alt="">
+        <span>
+           <h5>+88-01618-635225</h5>
+           <p>address</p>
+        </span>
+       </div>
+       <div>
+        <img src="image/envelope-regular-24.png" alt="">
+        <span>
+           <h5>salsabilcloth10@gmail.com </h5>
+           <p>email</p>
+        </span>
+       </div>
+       <div>
+        <img src="image/facebook-circle-logo-24.png" alt="">
+        <span>
+           <h5>salsabil110 </h5>
+           <p>facebook</p>
+        </span>
+       </div>
+       
+    </div>
+
+    <!----contact form-->
+
+    <div class="contact-col">
+        <h1>send a message :</h1>
+
+        <form action="form-handler.php" method="post">
+            <input type="text" name="name" placeholder="Enter your Name" required>
+            <input type="email" name="email" placeholder="Enter your email adddress" required>
+            <input type="text" name="subject" placeholder="Enter your subject" required>
+            <textarea  rows="8" name="message" placeholder="Message" required></textarea>
+            <button type="submit" class="red-btn">Send Message</button>
+        </form>
+
+
+
+
+    </div>
+
+
+</div>
+
+</section>
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-------------------------------------footer------------------>
+
+<footer class="footer">
+    <div class="footer-row1">
+        <div class="footer-details">
+            <img src="image/logo 2.png" width="140px">
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. At consequatur reiciendis nostrum ea sequi quaerat consectetur corrupti ad. Nobis beatae dignissimos ex eveniet iste, at magni maxime quis optio. Distinctio!
+            </p>
+        </div>
+        <div class="footer-col">
+            <h3>Useful Links</h3>
+            <ul>
+                <li><a href="product.html">Products</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="about us.html">About us</a></li>
+                <li><a href="blog.html">Blog</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-col">
+            <h3>Others</h3>
+            <ul>
+                <li><a href="#">Newsletter</a></li>
+                <li><a href="#">Promotions & Discounts</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-col">
+            <h3>Info</h3>
+            <ul>
+                <li><a href="#">Refund & Returns</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Shipping & Delivery</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-col">
+            <h3 style="text-align: left; margin-left: 30px;">Follow us</h3>
+            <div class="footer-icons">
+                <i class="fab fa-facebook fa-2x"></i>
+                <i class="fab fa-youtube fa-2x"></i>
+                <i class="fab fa-instagram fa-2x"></i>
+                <i class="fab fa-linkedin fa-2x"></i>
+            </div>
+        </div>
+    </div>
+    <div class="footer-trademark">
+        <div class="copyright">
+            Copyright<span>&copy;</span>. All rights reserved
+        </div>
+
+        <div class="developed-by">
+            <h4>Developed by: <span>sinan saifee</span></h4>
+        </div>
+    </div>
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ <!--js for hamburger menu --> 
+ <script>
+    var menuItem = document.getElementById("menuItem");
+if(window.innerWidth < 632)
+menuItem.style.display = 'none'
+if(window.innerWidth > 632)
+menuItem.styel.diplay = 'block'
+
+
+function showmenu(){
+    menuItem.style.display = 'block'
+   
+
+    
+    
+}
+
+<!---hide menu button-->
+
+function hidemenu(){
+    menuItem.style.display = 'none'
+}
+   
+</script>    
+   
+</script>    
+   
+<!--cart page script-->
+<script>
+   var cart = document.getElementById('cart')
+   function showcart(){
+    cart.style.display = 'block'
+   };
+
+   function closecart(){
+    cart.style.display = 'none'
+   };
+    
+</script>       
+</body>
+</html>

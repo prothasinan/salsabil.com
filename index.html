@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <div class="product-details">
+    <img src="" alt="" id="productImage">
+    <h2 id="productName"></h2>
+    <p id="productPrice"></p>
+    <p id="productDescription"></p>
+  </div>
+  
+  <script>
+    const urlParams = new URLSearchParams(window.location.search);
+    const productId = urlParams.get('id');
+    
+    const productName = document.getElementById('productName');
+    const productPrice = document.getElementById('productPrice');
+    const productDescription = document.getElementById('productDescription');
+    const productImage = document.getElementById('productImage');
+    
+    if (productId === 'product1') {
+      productName.textContent = 'Product 1';
+      productPrice.textContent = 'Price: $10';
+      productDescription.textContent = 'This is a great product!';
+      productImage.src = 'product1.jpg';
+    } else if (productId === 'product2') {
+      productName.textContent = 'Product 2';
+      productPrice.textContent = 'Price: $20';
+      productDescription.textContent = 'Another awesome product!';
+      productImage.src = 'product2.jpg';
+    }
+  </script>
+</body>
+</html>

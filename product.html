@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>sal sabil</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    
+    <!----tittle favicon icon -->
+
+    <link rel="shortcut icon" type="image/x-icon" href="image/sample tittle logo.jpg">
+    
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src='sal sabil web doc/main.js'></script>
+    
+</head>
+<body>
+    
+    
+    <div class="container">
+        <div class="navbar">
+            <div class="logo" style="text-align: left;">
+          <a href="main.html"><img src="image/logo 2.png" width="125px"></a>
+         
+       </div><nav>
+          <ul id="menuItem"> 
+            <li> <img src="image/hidemenu2.png" alt="close" class="close-icon" onclick="hidemenu()"></li>
+              <li><a href="main.html">Home</a><br><br></li>
+              <li><a href="product.html" class="active">products</a><br><br></li>
+              <li id="list"><a href="blog.html" >Blog</a><br><br></li>
+              <li><a href="about us.html">About us </a><br><br></li>
+              <li><a href="contact.html">Contact</a><br><br></li>
+              <li><img src="image/cartlogo2.png" id="cart-icon" onclick="showcart()"><br><br></li>
+        </ul>
+        <!--hamburger icon -->
+        <img src="image/hamburger2.png" class="menu-icon" alt="menu" onclick="showmenu()">
+           </nav></div>
+       </div>
+
+       <!---cart-->
+<div class="cart" id="cart">
+    <div class="carttittle"><h3>Your cart</h3></div>
+    
+    <div class="cartcontent">
+        
+    </div>
+    <div class="total">
+        <div class="total-tittle">Total:</div>
+        <div class="total-price">tk0.00</div>
+        
+
+    </div>
+    <div><button type="button" class="checkoutbtn">checkout</button></div>
+    <img src="image/closecart.png" alt="closecart" class="closecart" onclick="closecart()">
+
+</div>
+
+
+
+
+
+<!----------------------products--------------------------------->
+
+
+
+
+
+      <section class="shop container">
+
+<!---search bar-->
+<div class="searchbar">
+    <input type="text" placeholder="search">
+    <button><img src="image/search-regular-24.png" alt="search"></button>
+</div>
+
+        <h2 class="section-tittle">Shop products </h2>
+
+
+      
+
+        <!----item added message -->
+        <div class="item-added-to-cart-message" id="item-added-message">
+            <h3>item added to cart</h3>
+        </div><br><br>
+
+            
+
+
+
+
+
+
+
+        <div class="shop-content">
+            <!--box 1-->
+            <div class="product-box">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEio9JE9xqniJhHnYG6i-TedQRIVoAg7ZBQI0jPkzLr5sGsZBdxWSqdt0bQwDr-4m_YoEkA5Nwae5PaLOmoaTW54uFERgLAPDTB-F8S1f4o4Vp2uYZ0GCdJbd0Z65hxaiveBYI5-dCUsMFqhFCJFfV2qI8bdVovq6bylbksUoN0o3Fkr-ryOQRGnzgmjB3Q/s320/product1%20(1).png"
+                 class="product-img">
+                <h2 class="product-tittle">bakhur taiba
+                </h2>
+                <span class="price">350.tk</span>
+                <img src="image/shopping-bag-regular-24 (1).png" alt="add" class="add-cart" onclick="showitemadded()">
+
+            </div>
+
+
+            <div class="product-box">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi-cDJWliBfrS-bEsLBbE_i-i6inWFj-KbzdHRii-pYeV-vr1A7CgGa2vQNDRnz9JByRZNezZWcCv36hKK_WfOVOUJu3-w6h9dgZ0mnMR-IPfiSiYiMRZWaDqPYrA-PFQkKFD9g3LLZJF6T5oAtWY8vEgjhvpzfgMeLeq81DB4yq_uJL0P-8Z3nXOtKNGM/s320/product3.png"
+                 class="product-img">
+                <h2 class="product-tittle">Single cloor prayer mat(blue)
+                </h2>
+                <span class="price">690.tk</span>
+                <img src="image/shopping-bag-regular-24 (1).png" alt="add" class="add-cart" onclick="showitemadded()">
+
+            </div>
+
+
+            <div class="product-box">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjsfKIeaW4ItDfCgjXGZzgD1bMz8MpzyXz1pK-Z6g04zxY1gfEJri5bZ8SLlNC8RPEjXiZVslIu2n08ap6XJvJP6XxGSXxG8KvuX0zbtqRurp49EOE90LARDgrZxvYCvQ-9POkYpwfsHuOopKvE_s6WBLeQs0939NOXWF6ik-REJt83nX9LTiNgbuBcsUg/s320/product2.jpg"
+                 class="product-img">
+                <h2 class="product-tittle">Islam the light black t-shirt
+                </h2>
+                <span class="price">233.tk</span>
+                <img src="image/shopping-bag-regular-24 (1).png" alt="add" class="add-cart" onclick="showitemadded()">
+
+            </div>
+
+
+            <div class="product-box">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhnzN0d6kVFXcJ3n5AyiJ6XSlMullLyR73b8HVjMcRtaA23JnKXkLEbwoIrrzPtapZJsruLPlNm9KgN8QRrTanB6rtHgN9S5O09ZVmCd-wHZo_nHZyF3MNHJzlrXR7EgRZrW7iVxjRmSTXcOkxBqd-5TiD5d41PzPc7pADXsZYKkzPnsnutFKchQ3hVGvw/s320/product4.jpg"
+                 class="product-img">
+                <h2 class="product-tittle">assalamualaikum t-shirt(black)
+                </h2>
+                <span class="price">233.tk</span>
+                <img src="image/shopping-bag-regular-24 (1).png" alt="add" class="add-cart" onclick="showitemadded()">
+
+            </div>
+            
+
+            <div class="product-box">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjHQS2QbWMVdeV1xqjrDVhC2nQZZm7Cwi1LAMCUOcrJg4kyuqzs08OaPC4T3J-yRR7lZmNC5feVs_-QZJ4H2fa8sOt5I4JEkEU7hEDYJQdK_6hpIAu0uQ2jn_eQ1nz7WWDrIWKOOheaJoETGxSS0BijPSuc4ktGcW2QcrjEWvy9bj_EHnx3vhUxJJ1PHtE/s320/product6.jpg"
+                 class="product-img">
+                <h2 class="product-tittle">argentina Full Sleep Jarcy T-shirt(blue)
+                </h2>
+                <span class="price">450.tk</span>
+                <img src="image/shopping-bag-regular-24 (1).png" alt="add" class="add-cart" onclick="showitemadded()">
+
+            </div>
+            
+
+            <div class="product-box">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhDl1aLctKFQ8oysWpovtpR0GoDWu5S9WlWcgv4F_7Vqgg7qP9qJuolVnIVH7MUD-cTYHCXyxOOxQYEAIsS-RP6vZx1YNhiOcwRdcftVdkWb-ReYgVqad_a5voTAKrxCprIhGQ6Xvf_obBf0kZhQSFRuBPIi3lcXpcZ4-uXWpER5XF441y1ZTNr1cbxE9k/s320/product8.jpg"
+                 class="product-img">
+                <h2 class="product-tittle">ride or die t-shirt(white)
+                </h2>
+                <span class="price">233.tk</span>
+                <img src="image/shopping-bag-regular-24 (1).png" alt="add" class="add-cart" onclick="showitemadded()">
+
+            </div>
+            
+
+
+            <div class="product-box">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjsfKIeaW4ItDfCgjXGZzgD1bMz8MpzyXz1pK-Z6g04zxY1gfEJri5bZ8SLlNC8RPEjXiZVslIu2n08ap6XJvJP6XxGSXxG8KvuX0zbtqRurp49EOE90LARDgrZxvYCvQ-9POkYpwfsHuOopKvE_s6WBLeQs0939NOXWF6ik-REJt83nX9LTiNgbuBcsUg/s320/product2.jpg"
+                 class="product-img">
+                <h2 class="product-tittle">Islam the light black t-shirt
+                </h2>
+                <span class="price">233.tk</span>
+                <img src="image/shopping-bag-regular-24 (1).png" alt="add" class="add-cart" onclick="showitemadded()">
+
+            </div>
+            
+
+
+            <div class="product-box">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjsfKIeaW4ItDfCgjXGZzgD1bMz8MpzyXz1pK-Z6g04zxY1gfEJri5bZ8SLlNC8RPEjXiZVslIu2n08ap6XJvJP6XxGSXxG8KvuX0zbtqRurp49EOE90LARDgrZxvYCvQ-9POkYpwfsHuOopKvE_s6WBLeQs0939NOXWF6ik-REJt83nX9LTiNgbuBcsUg/s320/product2.jpg"
+                 class="product-img">
+                <h2 class="product-tittle">Islam the light black t-shirt
+                </h2>
+                <span class="price">233.tk</span>
+                <img src="image/shopping-bag-regular-24 (1).png" alt="add" class="add-cart" onclick="showitemadded()">
+
+            </div>
+            
+
+
+            <div class="product-box">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjsfKIeaW4ItDfCgjXGZzgD1bMz8MpzyXz1pK-Z6g04zxY1gfEJri5bZ8SLlNC8RPEjXiZVslIu2n08ap6XJvJP6XxGSXxG8KvuX0zbtqRurp49EOE90LARDgrZxvYCvQ-9POkYpwfsHuOopKvE_s6WBLeQs0939NOXWF6ik-REJt83nX9LTiNgbuBcsUg/s320/product2.jpg"
+                 class="product-img">
+                <h2 class="product-tittle">Islam the light black t-shirt
+                </h2>
+                <span class="price">233.tk</span>
+                <img src="image/shopping-bag-regular-24 (1).png" alt="add" class="add-cart" onclick="showitemadded()">
+
+            </div>
+            
+
+            
+            <!--add more productsss-->
+
+
+        </div>
+        
+</section>
+<div class="page-btn">
+    <span   onclick="activebtn1()">1</span>
+    <span onclick="activebtn2()" class="activebtn2">2</span>
+    <span onclick="activebtn3()" class="activebtn3">3</span>
+    <span>&#8594;</span>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-------------------------------------footer------------------>
+
+<footer class="footer">
+    <div class="footer-row1">
+        <div class="footer-details">
+            <img src="image/logo 2.png" width="140px">
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. At consequatur reiciendis nostrum ea sequi quaerat consectetur corrupti ad. Nobis beatae dignissimos ex eveniet iste, at magni maxime quis optio. Distinctio!
+            </p>
+        </div>
+        <div class="footer-col">
+            <h3>Useful Links</h3>
+            <ul>
+                <li><a href="product.html">Products</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="about us.html">About us</a></li>
+                <li><a href="blog.html">Blog</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-col">
+            <h3>Others</h3>
+            <ul>
+                <li><a href="#">Newsletter</a></li>
+                <li><a href="#">Promotions & Discounts</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-col">
+            <h3>Info</h3>
+            <ul>
+                <li><a href="#">Refund & Returns</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Shipping & Delivery</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-col">
+            <h3 style="text-align: left; margin-left: 30px;">Follow us</h3>
+            <div class="footer-icons">
+                <i class="fab fa-facebook fa-2x"></i>
+                <i class="fab fa-youtube fa-2x"></i>
+                <i class="fab fa-instagram fa-2x"></i>
+                <i class="fab fa-linkedin fa-2x"></i>
+            </div>
+        </div>
+    </div>
+    <div class="footer-trademark">
+        <div class="copyright">
+            Copyright<span>&copy;</span>. All rights reserved
+        </div>
+
+        <div class="developed-by">
+            <h4>Developed by: <span>sinan saifee</span></h4>
+        </div>
+    </div>
+</footer>
+
+
+
+
+
+
+       
+ <!--js for hamburger menu --> 
+ <script>
+    var menuItem = document.getElementById("menuItem");
+if(window.innerWidth < 632)
+menuItem.style.display = 'none'
+if(window.innerWidth > 632)
+menuItem.styel.diplay = 'block'
+
+
+function showmenu(){
+    menuItem.style.display = 'block'
+   
+
+    
+    
+}
+
+<!---hide menu button-->
+
+function hidemenu(){
+    menuItem.style.display = 'none'
+}
+   
+</script>    
+   
+<!--cart page script-->
+<script>
+   var cart = document.getElementById('cart')
+   function showcart(){
+    cart.style.display = 'block'
+   };
+
+   function closecart(){
+    cart.style.display = 'none'
+   };
+    
+</script>
+
+
+
+<!---cart script -->
+<script>
+    // making  add to cart 
+//cart working js
+if  (document.readyState =="loading"){
+    document.addEventListener(
+        'DOMContentLoaded', ready);
+}
+else {
+    ready();
+}
+//removing item from cart 
+function ready(){
+    var removeItems = document.querySelectorAll('.remove-item');
+
+    for (var i = 0; i < removeItems.length; i++) {
+        removeItems[i].addEventListener('click', removeItem);
+    }
+//quantity change 
+var quantityInputs = document.querySelectorAll('.cart-quantity'); // Corrected function name
+for (var i = 0; i < quantityInputs.length; i++) {
+    var input = quantityInputs[i];
+    input.addEventListener('change', quantityChanged);
+}
+//add item to cart 
+var addCart = document.getElementsByClassName('add-cart');
+for (var i = 0; i < addCart.length; i++) {
+    var button = addCart[i];
+    button.addEventListener("click", addCartClicked);
+}
+saveCartItems()
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+    function removeItem(event) {
+        var buttonClicked = event.target;
+        buttonClicked.parentElement.remove();
+        updatetotal()
+        saveCartItems();
+    }
+    function quantityChanged(event) {
+    var input = event.target;
+    if (isNaN(input.value) || input.value <= 0) {
+        input.value = 1;
+       
+    }
+    updatetotal();
+    saveCartItems();
+    }
+
+
+//add cart function
+function addCartClicked(event){
+    var button = event.target;
+    var shopProducts = button.parentElement;
+    var tittle = shopProducts.getElementsByClassName('product-tittle')[0].innerText;
+    var price = shopProducts.getElementsByClassName('price')[0].innerText;
+    var productImg = shopProducts.getElementsByClassName('product-img')[0].src
+    addProductToCart(tittle, price, productImg);
+    updatetotal();
+    showItemAddedMessage();
+    saveCartItems();
+}
+function addProductToCart(tittle, price, productImg){
+    var cartShopBox = document.createElement('div');
+    cartShopBox.classList.add('cartbox');
+    var cartItems = document.getElementsByClassName('cartcontent')[0];
+    var cartItemsNames = cartItems.getElementsByClassName('cart-product-tittle');
+    for ( var i =0; i< cartItemsNames.length; i++){
+        if (cartItemsNames[i].innerText == tittle){
+            alert('item is already added to cart');
+            return;
+        }
+    }
+var cartBoxContent = `<img src="${productImg}" alt="no photo" class="cart-img">
+            <div class="detail-box">
+                <div class="cart-product-tittle">${tittle}</div>
+                <div class="cart-price">${price}</div>
+                <input 
+                type="number"
+                 name="" 
+                 id="" 
+                 value="1" 
+                 class="cart-quantity"
+                 />
+            </div>
+            <!--remove item-->
+            <img src="image/removeitem.png" alt="remove" class="remove-item">`
+            cartShopBox.innerHTML = cartBoxContent;
+            cartItems.append(cartShopBox);
+            cartShopBox.getElementsByClassName('remove-item')[0].addEventListener('click', removeItem)
+            cartShopBox.getElementsByClassName('cart-quantity')[0].addEventListener('change', quantityChanged)
+saveCartItems()
+}
+
+
+
+
+
+
+
+    
+    //update total
+    function updatetotal() {
+    var cartcontent = document.querySelector('.cartcontent');
+    var cartBoxes = cartcontent.querySelectorAll('.cartbox');
+    var total = 0;
+
+    for (var i = 0; i < cartBoxes.length; i++) {
+        var cartBox = cartBoxes[i];
+        var priceElement = cartBox.querySelector('.cart-price');
+        var quantityElement = cartBox.querySelector('.cart-quantity');
+        var price = parseFloat(priceElement.innerText.replace('tk', '')); // Remove 'tk' and parse as a float
+        var quantity = quantityElement.value;
+        total += price * quantity; // Calculate the subtotal for each item and add it to the total
+    }
+    total = Math.round(total *100) / 100;
+    document.querySelector('.total-price').innerText = 'tk' + total.toFixed(2); // Display the total with two decimal places
+    //save item to local storage
+    localStorage.setItem('cartTotal', total);
+}
+
+
+
+
+
+//keep item in cart even after refreshing 
+// Save cart items to local storage
+function saveCartItems() {
+    var cartContent = document.getElementsByClassName('cartcontent')[0];
+    var cartBoxes = cartContent.getElementsByClassName('cartbox');
+    var cartItems = [];
+
+    for (var i = 0; i < cartBoxes.length; i++) {
+        var cartBox = cartBoxes[i];
+        var tittleElement = cartBox.getElementsByClassName('cart-product-tittle')[0];
+        var priceElement = cartBox.getElementsByClassName('cart-price')[0];
+        var quantityElement = cartBox.getElementsByClassName('cart-quantity')[0];
+        var productImg = cartBox.getElementsByClassName('cart-img')[0].src;
+
+        var item = {
+            tittle: tittleElement.innerText,
+            price: priceElement.innerText,
+            quantity: quantityElement.value,
+            productImg: productImg,
+        };
+        cartItems.push(item);
+    }
+    localStorage.setItem('cartItems', JSON.stringify(cartItems));
+}
+
+// Load cart items from local storage
+function loadCartItems() {
+    var cartItems = localStorage.getItem('cartItems');
+    if (cartItems) {
+        cartItems = JSON.parse(cartItems);
+
+        for (var i = 0; i < cartItems.length; i++) {
+            var item = cartItems[i];
+            addProductToCart(item.tittle, item.price, item.productImg);
+
+            // Get the last cart box element (the one that was just added)
+            var cartBoxes = document.getElementsByClassName('cartbox');
+            var cartBox = cartBoxes[cartBoxes.length - 1];
+
+            // Access the quantity element within the cartBox
+            var quantityElement = cartBox.getElementsByClassName('cart-quantity')[0];
+            quantityElement.value = item.quantity;
+        }
+    }
+
+    var cartTotal = localStorage.getItem('cartTotal');
+    if (cartTotal) {
+        document.getElementsByClassName('total-price')[0].innerText = 'tk' + cartTotal;
+    }
+}
+
+// Call the loadCartItems function when the page loads to populate the cart
+loadCartItems();
+
+
+
+
+
+var activebtn1 = document.getElementsByClassName('activebtn1');
+var activebtn2 = document.getElementsByClassName('activebtn2');
+var activebtn3 = document.getElementsByClassName('activebtn3');
+
+function activebtn2(){
+    activebtn2[0].style.background = '#ff523b';
+    activebtn1[0].style.background = '#fff';
+}
+
+//item added to cart message
+function showItemAddedMessage() {
+    var itemAddedMessage = document.getElementById('item-added-message');
+    itemAddedMessage.style.display = 'block';
+    setTimeout(function() {
+        itemAddedMessage.style.display = 'none';
+    }, 2000); // Hide the message after 2 seconds
+}
+
+
+
+
+</script>
+
+
+<!------page galler page btn gallery shifter -->
+
+   
+    
+</body>
+</html>

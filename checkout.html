@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>sal sabil - Cart</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <div class="logo" style="text-align: left;">
+                <img src="image/logo 2.png" width="125px">
+            </div>
+            <nav>
+                <ul id="menuItem"> 
+                    <li> <img src="image/hidemenu2.png" alt="close" class="close-icon" onclick="hidemenu()"></li>
+                    <li><a href="main.html">Home</a><br><br></li>
+                    <li><a href="product.html">Products</a><br><br></li>
+                    <li><a href="about us.html">About us </a><br><br></li>
+                    <li><a href="contact.html">Contact</a><br><br></li>
+                    <li><a href="image/cart.html"><img src="image/cartlogo.png" height="30px" width="35px"></a><br><br></li>
+        </ul>
+            <!--hamburger icon -->
+            <img src="image/hamburger2.png" class="menu-icon" alt="menu" onclick="showmenu()">
+            </nav>
+        </div>
+    </div>
+<div class="form" id="formx">
+    <form action="https://script.google.com/macros/s/AKfycbyQR8C0cva-Pg11tGEwtRDvlxfFAWARe4dxEmPaY14zcvEB9r1zYZFbH9vz23aluqD_Lw/exec" method='post' id="form">
+        <label for="Name">Name</label><br>
+        <input type="text" name="name" placeholder="yourname" class="checkinput" required><br><br>
+        <label for="address">Address</label><br>
+        <input type="text" name="address" placeholder="your address" class="checkinput" required><br><br>
+        <label for="Phone">Phone</label><br>
+        <input type="tel" name="phone" placeholder="your phone number" class="checkinput" required><br><br>
+        <label for="email">Email</label><br>
+        <input type="email"  name="email" placeholder="your email" class="checkinput" ><br><br>
+        <!------products for chekout -->
+        <label for="charge">City</label><br>
+        <select class="checkinput" type="text" name="charge" id="deliveryOption" onchange="updateDeliveryCharge()">
+            
+            <option value="50">
+        dhaka
+        </option>
+        <option value="100">
+            others
+        </option>
+    </select>
+    <a href="cart.html"><h4>view cart</h4></a>
+    <h3 id="deliveryCharge">Delivery charge: <span id="chargeAmount">50</span> tk</h3>
+        <input type="submit" value="checkout" class="btn" onclick="showpopup()">
+
+    </form>
+    
+</div>
+
+<div class="succesfulmessage" id="succesfulmessage">
+    <img src="image/tick.png" alt="succesful!" id="succesfulmessage">
+    <h2 id="succesfulmessage">thank you!</h2>
+    <p id="succesfulmessage">your order has been succesfully placed</p>
+    <a href="javascript:void(0);"><button type="button" class="succesfulokbtn" onclick="delayedhomeredirect()">OK</button></a>
+</div>
+
+<!--loading delay -->
+<div id="loadingOverlay">
+    <img id="loadingImage" src="image/loading.gif" alt="placing order...">
+</div>
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+ 
+ 
+ 
+    <!--js for hamburger menu --> 
+    <script>
+        var menuItem = document.getElementById("menuItem");
+    if(window.innerWidth < 632)
+    menuItem.style.display = 'none'
+    if(window.innerWidth > 632)
+    menuItem.styel.diplay = 'block'
+    
+    
+    function showmenu(){
+    menuItem.style.display = 'block'
+   
+
+    
+    
+}
+    <!---hide menu button-->
+    
+    function hidemenu(){
+        menuItem.style.display = 'none'
+    }
+     
+    </script> 
+    
+    <!--script for submition-->  
+
+
+    <script>
+      let form = document.querySelector("form");
+        
+        form.addEventListener('submit', (e) => {
+            e.preventDefault();
+            
+            let data = new FormData(form);
+            
+            fetch('https://script.google.com/macros/s/AKfycbyQR8C0cva-Pg11tGEwtRDvlxfFAWARe4dxEmPaY14zcvEB9r1zYZFbH9vz23aluqD_Lw/exec', {
+                    method: "POST",
+                    body: data
+                })
+                
+                .then(res => res.text())
+                console.log('order placed !')
+        })
+
+
+    </script>
+
+    <!--script for succefful-->
+    <script>
+        var succesfulmessage = document.getElementById('succesfulmessage');
+        var formx = document.getElementById('formx')
+
+        function showpopup(){
+            formx.style.display = 'none'
+            succesfulmessage.style.marginTop = '15%'
+        }
+    </script>
+
+
+<!--script for delivery cahrge -->
+
+<script>
+function updateDeliveryCharge() {
+  // Get the selected option value
+  var selectedOption = document.getElementById("deliveryOption").value;
+
+  // Update the delivery charge text in the <p> tag
+  var chargeAmountElement = document.getElementById("chargeAmount");
+  chargeAmountElement.textContent = selectedOption;
+}
+
+</script>
+
+
+
+
+
+
+<!--delayed home redirect after checkout-->
+<script>
+    
+function delayedhomeredirect() {
+    document.getElementById("loadingOverlay").style.display = "block";
+    setTimeout(function() {
+  window.location.href = 'main.html';
+}, 3000);}
+</script>
+
+</body>
+</html>
